@@ -797,7 +797,16 @@ margin-top: 0.3%}
 .harrysdesignimg{
 	width: 30%;
 	margin: 5%;
-	margin-left: 7%
+	margin-left: 7%;
+	padding-top: 6%
+	
+	
+		
+}
+.viperdesignimg{
+	width: 30%;
+	margin-left: 7%;
+	padding-top: 25%
 	
 	
 		
@@ -814,7 +823,7 @@ margin-top: 0.3%}
 		
 }
 
-.harrystitle2{width:100%;color: white;font-size: 90px; padding: 0px;margin-left: 0%; overflow: hidden; font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";}
+.harrystitle2{width:100%;color: white;font-size: 8vw; padding: 0px;margin-left: 0%; overflow: hidden; font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";}
 
 .contitlep{width: 50%;
 margin-left: 45%;
@@ -823,8 +832,8 @@ margin-left: 45%;
 	overflow: hidden;
 }
 
-.imgcondesign{width:100%;height: auto;overflow: hidden;}
-.fimg{width:24.5%;
+.imgcondesign{width:100%;height: auto;overflow: hidden; padding-top: 10% }
+.fimg{width:24.3%;
 	padding: 1%;
 	overflow: hidden
 	
@@ -877,7 +886,7 @@ margin-left: 45%;
 	overflow: hidden;
 }
 
-.vipertitle2{width:100%;color: white;font-size: 90px; padding: 0px;margin-left: 0%; overflow: hidden; font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";}
+.vipertitle2{width:100%;color: white;font-size: 6vw; padding-top: 40%; overflow: hidden; font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";}
 
 
 .viperdesignp{
