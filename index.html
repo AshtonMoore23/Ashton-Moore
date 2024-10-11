@@ -1,109 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" type="text/css">
-    <title>Ashton Moore's Portfolio</title>
+    <title>Portfolio</title>
 </head>
-
 <body>
     <div id="background">
-        <nav class="main-container">
-            <div class="homebutton"><a href="index.html">HOME</a></div>
+        <div class="homebutton"><a href="index.html">HOME</a></div>
+        
+        <div class="main-container">
             <button class="about"><a href="#vid">ABOUT</a></button>
             <div class="dropdown">
                 <button class="dropbtn">WORK</button>
                 <div class="dropdown-content">
-                    <a href="VIDEO1.html">Video</a>
-                    <a href="PHOTOGRAPHY.html">Photography</a>
-                    <a href="DESIGN.html">Design</a>
+                    <a href="VIDEO1.html">video</a>
+                    <a href="PHOTOGRAPHY.html">photography</a>
+                    <a href="DESIGN.html">design</a>
                 </div>
             </div>
             <button class="contact"><a href="#contacts">CONTACT</a></button>
-        </nav>
-
-        <img class="backgroundimage" src="images/bg 4 WITH TEXT.webp" alt="Background Image" />
-
-        <!-- About Me Section -->
-        <section class="about-me" id="vid">
-            <div class="containervid">
-                <video id="vid" autoplay loop muted>
-                    <source src="images/about me .mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div class="w3-container">
-                <img class="rightphoto" src="WHO AM I PHOTOS/using/WHO AM I PHOTO 1.jpg" alt="Who Am I" />
-                <h1 class="hello">Hello,</h1>
-                <h2 class="hello1">I'm Ashton</h2>
-                <p class="hello2">Welcome to my portfolio website</p>
-            </div>
-        </section>
-
-        <section class="biography">
-            <div class="righttext">
-                <img class="leftpic" src="WHO AM I PHOTOS/IMG_7777.jpeg" alt="Ashton" />
-                <div class="textbox">
-                    <p>I'm 23 years old, born in the UK, I grew up in the countryside of Norfolk...</p>
-                    <p>My passion for all things media started in High School...</p>
-                    <p>I had no idea what I was doing but I was having fun and learning along the way...</p>
-                    <p>I am ready to start my next chapter in your company. Thank you for exploring my portfolio.</p>
-                    <p class="fullresume"><a href="Ashton Moore's Resume.pdf" id="fullresume">Resume</a></p>
-                </div>
-            </div>
-        </section>
-
-        <div class="containervid">
-            <video id="vid2" autoplay loop muted>
-                <source src="images/example work title.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
         </div>
 
-        <!-- Contact Details -->
-        <section class="contact-details">
-            <div class="buttoncontainer">
-                <div class="btn-group">
-                    <button class="btn1"><a href="VIDEO1.html">Video</a></button>
-                    <button class="btn2"><a href="PHOTOGRAPHY.html">Photography</a></button>
-                    <button class="btn3"><a href="DESIGN.html">Design</a></button>
+        <div class="background-image-container">
+            <img class="backgroundimage" src="images/bg 4 WITH TEXT.webp" alt=""/>
+        </div>
+
+        <div class="about-section">
+            <center>
+                <div class="containervid">
+                    <video id="vid" width="100%" autoplay loop muted>
+                        <source src="images/about me .mp4" />
+                    </video>
                 </div>
+            </center>
+
+            <div class="w3-container">
+                <img class="rightphoto" src="WHO AM I PHOTOS/using/WHO AM I PHOTO 1.jpg" alt=""/>
+                <p class="hello">Hello,</p>
+                <p class="hello1">I'm Ashton</p>
+                <p class="hello2">Welcome to my portfolio website</p>
             </div>
 
+            <div class="righttext">
+                <div class="divpic">
+                    <img class="leftpic" src="WHO AM I PHOTOS/IMG_7777.jpeg" alt=""/>
+                </div>
+                <div class="textbox">
+                    <p>I'm 23 years old, born in the UK...</p>
+                    <p class="fullresume"><a href="Ashton Moore's Resume.pdf" id="fullresume"> Resume </a></p>
+                </div>
+            </div>
+        </div>
+
+        <center>
             <div class="containervid">
-                <video id="vid3" autoplay loop muted>
-                    <source src="images/contacts text .mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
+                <video id="vid2" width="100%" autoplay loop muted>
+                    <source src="images/example work title.mp4" />
                 </video>
             </div>
+        </center>
 
-            <div id="contacts">
-                <div class="hear">
-                    <p class="bottomtext">Got any questions?</p>
-                    <p>Get in touch</p>
-                </div>
-                <div class="link">
-                    <ul class="no-bullets">
-                        <li><a href="mailto:ashtonemoore@gmail.com">EMAIL</a></li>
-                        <li><a href="https://profile.indeed.com/">INDEED</a></li>
-                        <li><a href="https://www.instagram.com/moore_ashy" target="_blank">INSTAGRAM</a></li>
-                        <li><a href="https://www.facebook.com/ashton.moore.547/" target="_blank">FACEBOOK</a></li>
-                    </ul>
-                </div>
+        <div class="buttoncontainer">
+            <div class="btn-group">
+                <button class="btn1"><a href="VIDEO1.html">video</a></button>
+                <button class="btn2"><a href="PHOTOGRAPHY.html">photography</a></button>
+                <button class="btn3"><a href="DESIGN.html">design</a></button>
             </div>
-        </section>
+        </div>
 
-        <footer class="footer">
-            <p>© | ALL COPYRIGHTS TO ASHTON MOORE | WEBSITE DESIGNED BY ASHTON MOORE</p>
-        </footer>
+        <center>
+            <div class="containervid">
+                <video id="vid3" width="100%" autoplay loop muted>
+                    <source src="images/contacts text .mp4" />
+                </video>
+            </div>
+        </center>
+
+        <div id="contacts">
+            <div class="hear">
+                <p class="bottomtext">Got any questions?</p>
+                <p>Get in touch</p>
+            </div>
+            <div class="link">
+                <ul class="no-bullets">
+                    <li><a class="one" href="mailto:ashtonemoore@gmail.com">EMAIL</a></li>
+                    <li><a class="two" href="https://profile.indeed.com/">INDEED</a></li>
+                    <li><a class="three" href="https://www.instagram.com/moore_ashy" target="_blank">INSTAGRAM</a></li>
+                    <li><a class="four" href="https://www.facebook.com/ashton.moore.547/" target="_blank">FACEBOOK</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="footer">© | ALL COPYRIGHTS TO ASHTON MOORE | WEBSITE DESIGNED BY ASHTON MOORE</p>
 
         <script src="js/jquery-3.4.1.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap-4.4.1.js"></script>
     </div>
 </body>
-
 </html>
