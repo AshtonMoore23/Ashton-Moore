@@ -900,3 +900,31 @@ margin-left: 45%;
 
 		
 }
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+    .main-container {
+        width: 100%; /* Make it full width */
+        margin-left: 0; /* Remove margin */
+        flex-direction: column; /* Stack elements */
+    }
+
+    .homebutton, .contact, .about {
+        width: 90%; /* Adjust button widths */
+        margin-left: 5%; /* Center buttons */
+        font-size: 4vw; /* Responsive font size */
+    }
+
+    .hello, .hello1, .hello2 {
+        font-size: 5vw; /* Adjust font sizes for better readability */
+        text-align: center; /* Center text */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    /* Other elements as needed... */
+    #vid {
+        width: 100%; /* Make video full width */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Add more rules for other elements as needed */
+}
