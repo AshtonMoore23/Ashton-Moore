@@ -1,105 +1,56 @@
-#background {
-    background: black;
-    width: 100%;
-    height: auto;
-}
-
-body {
-    width: 100%;
-    height: auto;
-    overflow-x: hidden;
-    color: white;
-    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
-}
-
-/* Nav and image */
+/* Full-width nav bar */
 .main-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed; /* Keep it at the top */
+  top: 0;
+  background-color: black; /* Add background color */
+  z-index: 1000; /* Keep it on top of other content */
+  padding: 10px; /* Add some padding */
 }
 
-.homebutton, .about, .contact {
-    background-color: transparent;
-    color: white;
-    font-size: 1.5vw;
-    border: solid #FFFFFF thin;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem;
+/* Home button */
+.homebutton {
+  flex-grow: 1; /* Allow it to grow */
+  text-align: left; /* Align text to left */
 }
 
-.dropdown {
-    position: relative;
+/* About, Contact, and Dropdown buttons */
+.about, .contact, .dropbtn {
+  flex-grow: 1; /* Allow these buttons to grow */
+  text-align: center; /* Center align text */
 }
 
-/* Dropdown Styles */
-.dropbtn {
-    background-color: transparent;
-    color: white;
-    font-size: 1.5vw;
-    border: solid #FFFFFF thin;
-    padding: 0.5rem;
+/* Video container */
+.containervid {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Center video */
 }
 
-/* Background Image */
-.background-image-container {
-    width: 100%;
+/* Video styles */
+video {
+  max-width: 100%; /* Scale video to fit */
+  height: auto; /* Maintain aspect ratio */
 }
 
+/* Image styles */
 .backgroundimage {
-    width: 100%;
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
 }
 
-/* Responsive Video */
-.containervid video {
-    width: 100%;
+/* Additional adjustments for text boxes and images */
+.righttext, .textbox {
+  max-width: 80%; /* Limit the width */
+  margin: 0 auto; /* Center align */
 }
 
-/* Right photo and left pic styles */
-.rightphoto, .leftpic {
-    width: 100%;
-    max-width: 400px; /* Maximum width for larger screens */
-    height: auto;
-}
-
-.textbox {
-    padding: 2%;
-}
-
-/* Button Container */
-.buttoncontainer {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 2rem 0;
-}
-
-.btn-group button {
-    background-color: black;
-    border: 6px solid #FFFFFf;
-    margin: 0.5rem;
-    padding: 1rem;
-    color: white;
-    width: 100%; /* Full width on small screens */
-}
-
-/* Contacts */
-.link ul {
-    padding: 0;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .main-container {
-        flex-direction: column;
-    }
-
-    .homebutton, .about, .contact, .dropbtn {
-        font-size: 4vw; /* Increase font size for mobile */
-    }
-
-    .textbox {
-        font-size: 4vw; /* Adjust text size */
-    }
+/* Ensure the footer is responsive */
+.footer {
+  text-align: center; /* Center the footer text */
+  padding: 20px; /* Add padding */
 }
