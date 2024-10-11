@@ -8,215 +8,98 @@ body {
     width: 100%;
     height: auto;
     overflow-x: hidden;
+    color: white;
+    font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
 }
 
-html {
-    width: 100%;
-    height: auto;
-}
-
-/*nav and image*/
+/* Nav and image */
 .main-container {
-    position: relative; /* Changed to relative */
-    display: flex; /* Use flexbox */
-    flex-wrap: wrap; /* Allow items to wrap */
-    width: 100%; /* Full width */
-    justify-content: center; /* Center contents */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
 }
 
-.homebutton {
+.homebutton, .about, .contact {
     background-color: transparent;
     color: white;
-    font-size: 2vw; /* Adjust for better scaling */
+    font-size: 1.5vw;
     border: solid #FFFFFF thin;
-    padding: 1%;
-    width: 90%; /* Adjust width for mobile */
-    margin: 1% auto; /* Center button */
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
 }
 
-.contact, .about {
-    background-color: transparent;
-    color: white;
-    font-size: 2vw;
-    border: solid #FFFFFF thin;
-    width: 90%; /* Adjust width for mobile */
-    margin: 1% auto; /* Center buttons */
+.dropdown {
+    position: relative;
 }
 
-/* Dropdown Button */
+/* Dropdown Styles */
 .dropbtn {
     background-color: transparent;
     color: white;
-    font-size: 2vw;
+    font-size: 1.5vw;
     border: solid #FFFFFF thin;
-    width: 100%; /* Full width */
+    padding: 0.5rem;
 }
 
-/* Dropdown Content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-    width: 100%; /* Full width */
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    width: 100%; /* Full width */
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    font-size: 2vw;
-    color: white;
-    padding: 1%;
-    text-decoration: none;
-    display: block;
-    border: #FFFFFF solid thin;
-    text-align: center;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
+/* Background Image */
+.background-image-container {
+    width: 100%;
 }
 
 .backgroundimage {
-    width: 100%; /* Ensure background image is responsive */
+    width: 100%;
 }
 
-/* Video */
-#vid {
-    width: 100%; /* Make video full width */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 10%;
+/* Responsive Video */
+.containervid video {
+    width: 100%;
 }
 
-/* Welcome Section */
-.w3-container {
-    height: auto;
-    padding-bottom: 30%;
-}
-
+/* Right photo and left pic styles */
 .rightphoto, .leftpic {
-    width: 100%; /* Full width for mobile */
+    width: 100%;
+    max-width: 400px; /* Maximum width for larger screens */
     height: auto;
-    margin: 5px 0; /* Vertical spacing */
-    border: thick solid #FFFFFF;
-    filter: gray; /* Grayscale effect */
-    transition: filter 0.2s; /* Smooth transition */
 }
 
-.rightphoto:hover, .leftpic:hover {
-    filter: none; /* Remove grayscale on hover */
-}
-
-/* Responsive Text */
-.hello, .hello1, .hello2 {
-    width: 100%; /* Full width */
-    font-size: 5vw; /* Responsive font size */
-    text-align: center; /* Center text */
-    color: white;
-    padding-top: 3%;
-    font-weight: 600;
-}
-
-/* Contact Info */
-.maintitle, .title, .info {
-    color: white;
-}
-
-.maintitle {
-    font-size: 50px;
-}
-
-.title {
-    font-size: 30px;
-}
-
-.info {
-    font-size: 20px;
-}
-
-/* Text Box */
 .textbox {
-    border: #FFFFFF solid thin;
-    width: 90%; /* Full width for mobile */
-    margin: 2% auto; /* Center box */
     padding: 2%;
-    text-align: left;
-    box-shadow: 10px 0 40px #f0f, -10px 0 40px #0ff;
-    filter: gray; /* Grayscale effect */
 }
 
-.textbox:hover {
-    filter: none; /* Remove grayscale on hover */
+/* Button Container */
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 2rem 0;
 }
 
-/* Resume Button */
-#fullresume {
-    color: white;
-    border: thin solid #FFFFFF;
-    padding: 2%;
-    font-size: 2vw;
-    margin-left: 0.2%;
-}
-
-/* Buttons */
 .btn-group button {
-    width: 90%; /* Full width for mobile */
     background-color: black;
     border: 6px solid #FFFFFf;
-    text-transform: uppercase;
-    border-radius: 2%;
-}
-
-.btn-group a {
-    font-size: 4vw;
+    margin: 0.5rem;
+    padding: 1rem;
     color: white;
-    width: 100%;
+    width: 100%; /* Full width on small screens */
 }
 
-.btn-group button:hover {
-    background-color: #FFFFFF;
-    color: black;
-    border-radius: 10%;
+/* Contacts */
+.link ul {
+    padding: 0;
 }
 
-.btn-group a:hover {
-    color: black;
-    text-decoration: none;
-}
-
-/* Footer */
-.footer {
-    color: white;
-    width: 100%;
-    height: auto;
-    padding: 3%;
-    margin-top: 25%;
-}
-
-/* Media Query for Mobile Devices */
-@media only screen and (max-width: 600px) {
+/* Responsive Styles */
+@media (max-width: 768px) {
     .main-container {
-        flex-direction: column; /* Stack elements */
+        flex-direction: column;
     }
 
-    .homebutton, .contact, .about {
-        width: 90%; /* Full width */
-        margin: 1% auto; /* Center buttons */
-        font-size: 4vw; /* Responsive font size */
+    .homebutton, .about, .contact, .dropbtn {
+        font-size: 4vw; /* Increase font size for mobile */
     }
 
-    .hello, .hello1, .hello2 {
-        font-size: 5vw; /* Responsive text */
-        text-align: center; /* Center text */
-        margin-right: 0; /* Remove right margin */
-    }
-
-    #vid {
-        width: 100%; /* Full width for video */
-        height: auto; /* Maintain aspect ratio */
+    .textbox {
+        font-size: 4vw; /* Adjust text size */
     }
 }
